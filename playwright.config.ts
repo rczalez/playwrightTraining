@@ -11,34 +11,34 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
   workers: 1,
   reporter: [['html'],
-  //  ['playwright-qatouch-reporter'], [
-  //   "./node_modules/playwright-slack-report/dist/src/SlackReporter.js",
-  //   {
-  //     channels: ["tech-automated-tests"], // provide one or more Slack channels
-  //     sendResults: "always", // "always" , "on-failure", "off"
-  //     slackOAuthToken: envVariables.SLACK_OAUTH_TOKEN, // Slack OAuth Token
-  //     showInThread: true,
-  //     meta: [
-  //       {
-  //           key: 'Environment',
-  //           value: 'Staging',
-  //       },
-  //       {
-  //           key: 'Version',
-  //           value: '2.16.0', // depending on your CI environment, this can be the branch name, build id, etc
-  //       },
-  //       {
-  //           key: 'Browser',
-  //           value: 'Chrome',
-  //       },
-  //       {
-  //         key: 'App',
-  //         value: 'Investor App',
-  //     },
-  //   ],
-  //   },
+   ['playwright-qatouch-reporter'], [
+    "./node_modules/playwright-slack-report/dist/src/SlackReporter.js",
+    {
+      channels: ["tech-automated-tests"], // provide one or more Slack channels
+      sendResults: "always", // "always" , "on-failure", "off"
+      slackOAuthToken: envVariables.SLACK_OAUTH_TOKEN, // Slack OAuth Token
+      showInThread: true,
+      meta: [
+        {
+            key: 'Environment',
+            value: 'Staging',
+        },
+        {
+            key: 'Version',
+            value: '2.16.0', // depending on your CI environment, this can be the branch name, build id, etc
+        },
+        {
+            key: 'Browser',
+            value: 'Chrome',
+        },
+        {
+          key: 'App',
+          value: 'Investor App',
+      },
+    ],
+    },
     
-  // ]
+  ]
 ],
   timeout: 200 * 1000,
   use: {
