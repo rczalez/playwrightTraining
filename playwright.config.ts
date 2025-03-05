@@ -17,7 +17,22 @@ export default defineConfig({
       sendResults: "always", // "always" , "on-failure", "off"
       slackOAuthToken: envVariables.SLACK_OAUTH_TOKEN, // Slack OAuth Token
       showInThread: true,
+      meta: [
+        {
+            key: 'Environment',
+            value: 'Staging',
+        },
+        {
+            key: 'Version',
+            value: '2.16.0', // depending on your CI environment, this can be the branch name, build id, etc
+        },
+        {
+            key: 'Browser',
+            value: 'Chrome',
+        },
+    ],
     },
+    
   ]],
   timeout: 200 * 1000,
   use: {
