@@ -1,0 +1,21 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.3.0",
+    "auto-playwright": "^1.14.0",
+    "playwright-slack-report": "^1.1.89"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright-qatouch-reporter": "^1.2.0"
+  }
+}

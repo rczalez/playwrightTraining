@@ -1,0 +1,74 @@
+{
+    "year1": {
+        "revenueGrowthRate": "N/A",
+        "costOfSales": "61.4%",
+        "grossMargin": "38.6%",
+        "operatingExpenseOfSales": "0.9%",
+        "ebitdaMargin": "37.6%",
+        "adjustedEbitdaMargin": "36.6%",
+        "netProfitMargin": "36.6%"
+    },
+    "year2": {
+        "revenueGrowthRate": "700.0%",
+        "costOfSales": "87.7%",
+        "grossMargin": "12.3%",
+        "operatingExpenseOfSales": "0.1%",
+        "ebitdaMargin": "12.2%",
+        "adjustedEbitdaMargin": "12.2%",
+        "netProfitMargin": "12.0%"
+    },
+    "year3": {
+        "revenueGrowthRate": "183.8%",
+        "costOfSales": "30.7%",
+        "grossMargin": "69.3%",
+        "operatingExpenseOfSales": "0.0%",
+        "ebitdaMargin": "69.3%",
+        "adjustedEbitdaMargin": "74.3%",
+        "netProfitMargin": "69.2%"
+    },
+    "projection1": {
+        "revenueGrowthRate": "22.0%",
+        "costOfSales": "26.2%",
+        "grossMargin": "73.8%",
+        "operatingExpenseOfSales": "0.0%",
+        "ebitdaMargin": "73.8%",
+        "adjustedEbitdaMargin": "73.8%",
+        "netProfitMargin": "72.2%"
+    },
+    "projection2": {
+        "revenueGrowthRate": "30.0%",
+        "costOfSales": "22.1%",
+        "grossMargin": "77.9%",
+        "operatingExpenseOfSales": "0.0%",
+        "ebitdaMargin": "77.8%",
+        "adjustedEbitdaMargin": "77.8%",
+        "netProfitMargin": "76.6%"
+    },
+    "projection3": {
+        "revenueGrowthRate": "10.0%",
+        "costOfSales": "22.1%",
+        "grossMargin": "77.9%",
+        "operatingExpenseOfSales": "0.0%",
+        "ebitdaMargin": "77.8%",
+        "adjustedEbitdaMargin": "77.8%",
+        "netProfitMargin": "76.7%"
+    },
+    "ltm": {
+        "revenueGrowthRate": "183.8%",
+        "costOfSales": "30.7%",
+        "grossMargin": "69.3%",
+        "operatingExpenseOfSales": "0.0%",
+        "ebitdaMargin": "69.3%",
+        "adjustedEbitdaMargin": "74.3%",
+        "netProfitMargin": "69.2%"
+    },
+    "ntm": {
+        "revenueGrowthRate": "22.0%",
+        "costOfSales": "26.2%",
+        "grossMargin": "73.8%",
+        "operatingExpenseOfSales": "0.0%",
+        "ebitdaMargin": "73.8%",
+        "adjustedEbitdaMargin": "73.8%",
+        "netProfitMargin": "72.2%"
+    }
+}

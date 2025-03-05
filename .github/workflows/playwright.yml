@@ -18,6 +18,19 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
+      env:
+        AUTO_PLAYWRIGHT_DEBUG: true
+        BASE_URL: ${{ vars.E2E_BASE_URL }}
+        BASE_FIRM_NAME: ${{ vars.BASE_FIRM_NAME }}
+        BASE_MEASUREMENT_DATE: ${{ vars.BASE_MEASUREMENT_DATE }}
+        HEADLESS_DEBUG: true
+        SCALAR_PASSWORD: ${{ secrets.SCALAR_PASSWORD }}
+        SCALAR_USERNAME: ${{ vars.SCALAR_USERNAME }}
+        SLACK_OAUTH_TOKEN: ${{ secrets.SLACK_OAUTH_TOKEN }}
+        QATOUCH_DOMAIN: ${{ vars.QATOUCH_DOMAIN }}
+        QATOUCH_API_TOKEN: ${{ secrets.QATOUCH_API_TOKEN }}
+        QATOUCH_PROJECT_KEY: ${{ secrets.QATOUCH_PROJECT_KEY }}
+        QATOUCH_TESTRUN_ID: ${{ secrets.QATOUCH_TESTRUN_ID }}
       run: npx playwright test tests/Accounting tests/Calibration tests/CapTable tests/Companies tests/Financials tests/Flow tests/Valuation
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
