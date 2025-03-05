@@ -35,7 +35,7 @@ jobs:
         QATOUCH_API_TOKEN: ${{ secrets.QATOUCH_API_TOKEN }}
         QATOUCH_PROJECT_KEY: ${{ secrets.QATOUCH_PROJECT_KEY }}
         QATOUCH_TESTRUN_ID: ${{ secrets.QATOUCH_TESTRUN_ID }}
-      run: npx playwright test tests/Accounting
+      run: npx playwright test tests/Accounting tests/Calibration tests/CapTable tests/Companies tests/Financials tests/Flow tests/Valuation
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
