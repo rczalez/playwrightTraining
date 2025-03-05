@@ -20,7 +20,7 @@ jobs:
     - name: Run Playwright tests
       env:
         AUTO_PLAYWRIGHT_DEBUG: true
-        BASE_URL: ${{ vars.E2E_BASE_URL }}
+        BASE_URL: ${{ vars.BASE_URL }}
         BASE_FIRM_NAME: ${{ vars.BASE_FIRM_NAME }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         BASE_MEASUREMENT_DATE: ${{ vars.BASE_MEASUREMENT_DATE }}

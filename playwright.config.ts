@@ -30,10 +30,6 @@ export default defineConfig({
             key: 'Browser',
             value: 'Chrome',
         },
-        {
-          key: 'App',
-          value: 'Investor',
-      },
     ],
     },
     
